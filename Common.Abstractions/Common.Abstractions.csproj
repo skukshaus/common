@@ -12,13 +12,13 @@
         <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
         <VersionPrefix>$(AssemblyVersion)</VersionPrefix>
         <Title>$(AssemblyName)</Title>
-        <Description>The most flexible logger on earth</Description>
+        <Description>A collection of well known pattern interfaces</Description>
         <PackageId>$(AssemblyName)</PackageId>
         <PackageProjectUrl>https://github.com/skukshaus/Common</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/skukshaus/Common</RepositoryUrl>
         <RepositoryType>github</RepositoryType>
-        <PackageTags>Common, solid, abstraction, contract, dependency, injection</PackageTags>
+        <PackageTags>Common, solid, abstraction, contract, dependency, injection, gof, architecture, factory, repository</PackageTags>
         <FileVersion>$(AssemblyVersion)</FileVersion>
         <NeutralLanguage>en-US</NeutralLanguage>
         <OutputPath>..\.bin\$(Configuration)\</OutputPath>

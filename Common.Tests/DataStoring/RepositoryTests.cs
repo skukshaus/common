@@ -2,7 +2,7 @@ namespace Ksh.Common.Tests.DataStoring;
 
 public class RepositoryTests
 {
-    [Fact] public void foo()
+    [Fact] public void CreatePersonRepoWithUow()
     {
         // Arrange
         var uow = new UnitOfWork();

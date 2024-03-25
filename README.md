@@ -10,3 +10,8 @@
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | Ksh.Common.Abstractions | [![NuGet](https://img.shields.io/nuget/v/Ksh.Common.Abstractions.svg)](https://www.nuget.org/packages/Ksh.Common.Abstractions/) | [![NuGet](https://img.shields.io/nuget/dt/Ksh.Common.Abstractions.svg)](https://www.nuget.org/packages/Ksh.Common.Abstractions/) |
 
+This library is a collection of very often used marker interfaces.
+
+Here are just a few examples: ``IFactory>``, ``IShallowCopy``, ``IDeepCopy``, ``IRepository``, and so on.
+
+If you want learn more about these design patterns, you can visit [refactoring.guru](https://refactoring.guru/design-patterns)
