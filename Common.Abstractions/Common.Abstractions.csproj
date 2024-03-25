@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <Authors>Sergej Kukshaus</Authors>
+        <AssemblyName>Ksh.Common.Abstractions</AssemblyName>
+        <AssemblyVersion>2024.1.1</AssemblyVersion>
+
+        <RootNamespace>$(AssemblyName)</RootNamespace>
+        <TargetFramework>net8.0</TargetFramework>
+        <LangVersion>12</LangVersion>
+        <Nullable>enable</Nullable>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <VersionPrefix>$(AssemblyVersion)</VersionPrefix>
+        <Title>$(AssemblyName)</Title>
+        <Description>The most flexible logger on earth</Description>
+        <PackageId>$(AssemblyName)</PackageId>
+        <PackageProjectUrl>https://github.com/skukshaus/Common</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/skukshaus/Common</RepositoryUrl>
+        <RepositoryType>github</RepositoryType>
+        <PackageTags>Common, solid, abstraction, contract, dependency, injection</PackageTags>
+        <FileVersion>$(AssemblyVersion)</FileVersion>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <OutputPath>..\.bin\$(Configuration)\</OutputPath>
+        <IntermediateOutputPath>..\.obj\$(Configuration)\</IntermediateOutputPath>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+</Project>
