@@ -1,7 +1,10 @@
 global using System;
+global using System.Linq;
 global using Bogus;
 global using FluentAssertions;
 global using FluentAssertions.Execution;
+global using Ksh.Common.Abstractions;
+global using Ksh.Common.Tests.CreationalPatterns.DomainLang;
 global using Moq;
 global using Xunit;
 global using Xunit.Abstractions;

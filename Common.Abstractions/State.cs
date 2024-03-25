@@ -1,5 +1,3 @@
 ﻿namespace Ksh.Common.Abstractions;
 
-public interface ICommon
-{
-}
+public interface IState;
