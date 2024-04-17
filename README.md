@@ -1,14 +1,13 @@
 # Ksh.Common
 
 [![test](https://github.com/skukshaus/Common/actions/workflows/test.yml/badge.svg)](https://github.com/skukshaus/Common/actions/workflows/test_main.yml)
-[![devel](https://github.com/skukshaus/Common/actions/workflows/devel.yml/badge.svg)](https://github.com/skukshaus/Common/actions/workflows/devel.yml)
-[![main](https://github.com/skukshaus/common/actions/workflows/main.yml/badge.svg)](https://github.com/skukshaus/common/actions/workflows/main.yml)
+[![devel](https://github.com/skukshaus/common/actions/workflows/devel.yml/badge.svg)](https://github.com/skukshaus/common/actions/workflows/devel.yml)
+[![main](https://github.com/skukshaus/common/actions/workflows/main.yaml/badge.svg)](https://github.com/skukshaus/common/actions/workflows/main.yaml)
 [![GitHub License](https://img.shields.io/github/license/skukshaus/Common)](https://github.com/skukshaus/Common/blob/main/LICENSE)
-
 
 | package                 | version                                                                                                                         | downloads                                                                                                                        |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Ksh.Common.Abstractions | [![NuGet](https://img.shields.io/nuget/v/Ksh.Common.Abstractions.svg)](https://www.nuget.org/packages/Ksh.Common.Abstractions/) | [![NuGet](https://img.shields.io/nuget/dt/Ksh.Common.Abstractions.svg)](https://www.nuget.org/packages/Ksh.Common.Abstractions/) |
+| Ksh.Common.Abstractions | [![NuGet](https://img.shields.io/nuget/v/ksh.common.abstractions.svg)](https://www.nuget.org/packages/Ksh.Common.Abstractions/) | [![NuGet](https://img.shields.io/nuget/dt/Ksh.Common.Abstractions.svg)](https://www.nuget.org/packages/Ksh.Common.Abstractions/) |
 
 This library is a collection of very often used marker interfaces.
 

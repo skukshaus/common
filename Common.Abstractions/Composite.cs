@@ -1,8 +1,8 @@
 ﻿namespace Ksh.Common.Abstractions;
 
-public interface IComposite : IDisposable;
+public interface IComposite;
 
-public interface IComposite<in T> : IComposite
+public interface IComposite<in T>
 {
     void Traverse();
 
@@ -13,9 +13,9 @@ public interface IComposite<in T> : IComposite
     void ClearElements();
 }
 
-public interface IAsyncComposite : IAsyncDisposable;
+public interface IAsyncComposite;
 
-public interface IAsyncComposite<in T> : IAsyncCommand
+public interface IAsyncComposite<in T> : IAsyncComposite
 {
     Task TraverseAsync(CancellationToken cancellationToken);
 

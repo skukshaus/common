@@ -1,12 +1,12 @@
 ﻿namespace Ksh.Common.Abstractions;
 
-public interface IBuilder<out T> : IDisposable
+public interface IBuilder<out T>
 {
     T Build();
 
     void Reset();
 }
-public interface IAsyncBuilder<T> : IAsyncDisposable
+public interface IAsyncBuilder<T>
 {
     Task<T> BuildAsync(CancellationToken cancellationToken);
 
