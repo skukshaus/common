@@ -8,7 +8,7 @@ public interface IBuilder<out T> : IDisposable
 }
 public interface IAsyncBuilder<T> : IAsyncDisposable
 {
-    Task<T> BuildAsync();
+    Task<T> BuildAsync(CancellationToken cancellationToken);
 
-    Task ResetAsync();
+    Task ResetAsync(CancellationToken cancellationToken);
 }

@@ -2,7 +2,7 @@
 
 [![test](https://github.com/skukshaus/Common/actions/workflows/test.yml/badge.svg)](https://github.com/skukshaus/Common/actions/workflows/test_main.yml)
 [![devel](https://github.com/skukshaus/Common/actions/workflows/devel.yml/badge.svg)](https://github.com/skukshaus/Common/actions/workflows/devel.yml)
-[![main](https://github.com/skukshaus/Common/actions/workflows/main.yml/badge.svg)](https://github.com/skukshaus/Common/actions/workflows/deploy_main.yml)
+[![main](https://github.com/skukshaus/common/actions/workflows/main.yml/badge.svg)](https://github.com/skukshaus/common/actions/workflows/main.yml)
 [![GitHub License](https://img.shields.io/github/license/skukshaus/Common)](https://github.com/skukshaus/Common/blob/main/LICENSE)
 
 

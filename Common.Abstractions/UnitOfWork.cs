@@ -14,9 +14,9 @@ public interface IUnitOfWork<TKey> : IDisposable
 public interface IAsyncUnitOfWork<TKey> : IAsyncDisposable 
     where TKey : struct, IComparable 
 {
-    Task<IAsyncRepository<TEntity, TKey>> GetRepositoryAsync<TEntity>() 
+    Task<IAsyncRepository<TEntity, TKey>> GetRepositoryAsync<TEntity>(CancellationToken cancellationToken) 
         where TEntity : class, IEntity<TKey>;
 
-    Task Commit();
-    Task Rollback();
+    Task Commit(CancellationToken cancellationToken);
+    Task Rollback(CancellationToken cancellationToken);
 }

@@ -12,10 +12,10 @@ public interface IVisitorAcceptor<T>
 
 public interface IAsyncVisitor<T>
 {
-    Task<T> VisitAsync(T obj);
+    Task<T> VisitAsync(T obj, CancellationToken cancellationToken);
 }
 
 public interface IAsyncVisitorAcceptor<T>
 {
-    Task<T> AcceptAsync(IAsyncVisitor<T> accept);
+    Task<T> AcceptAsync(IAsyncVisitor<T> accept, CancellationToken cancellationToken);
 }

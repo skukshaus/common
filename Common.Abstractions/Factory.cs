@@ -31,15 +31,15 @@ public interface IAsyncFactory<TResult> : IAsyncFactory
 
 public interface IAsyncFactory<TResult, in TParam> : IAsyncFactory
 {
-    Task<TResult> CreateAsync(TParam param);
+    Task<TResult> CreateAsync(TParam param, CancellationToken cancellationToken);
 }
 
 public interface IAsyncFactory<TResult, in TParam1, in TParam2> : IAsyncFactory
 {
-    Task<TResult> CreateAsync(TParam1 param1, TParam2 param2);
+    Task<TResult> CreateAsync(TParam1 param1, TParam2 param2, CancellationToken cancellationToken);
 }
 
 public interface IAsyncFactory<TResult, in TParam1, in TParam2, in TParam3> : IAsyncFactory
 {
-    Task<TResult> CreateAsync(TParam1 param1, TParam2 param2, TParam3 param3);
+    Task<TResult> CreateAsync(TParam1 param1, TParam2 param2, TParam3 param3, CancellationToken cancellationToken);
 }

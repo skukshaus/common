@@ -11,9 +11,9 @@ public interface IDeepCopy<out TResult>
 
 public interface IAsyncShallowCopy<TResult>
 {
-    Task<TResult> ShallowCopyAsync();
+    Task<TResult> ShallowCopyAsync(CancellationToken cancellationToken);
 }
 public interface IAsyncDeepCopy<TResult>
 {
-    Task<TResult> DeepCopyAsync();
+    Task<TResult> DeepCopyAsync(CancellationToken cancellationToken);
 }

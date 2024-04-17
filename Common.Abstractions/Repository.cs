@@ -1,7 +1,5 @@
 ﻿namespace Ksh.Common.Abstractions;
 
-
-
 public interface IRepository<TEntity, in TKey>
     where TEntity : class, IEntity<TKey>
     where TKey : struct, IComparable
@@ -18,10 +16,10 @@ public interface IAsyncRepository<TEntity, in TKey>
     where TEntity : class, IEntity<TKey>
     where TKey : struct, IComparable
 {
-    Task<IQueryable<TEntity>> GetAllAsync();
-    Task<TEntity> GetByIdAsync(TKey id);
+    Task<IQueryable<TEntity>> GetAllAsync(CancellationToken cancellationToken);
+    Task<TEntity> GetByIdAsync(TKey id, CancellationToken cancellationToken);
 
-    Task CreateAsync(TEntity obj);
-    Task UpdateAsync(TEntity obj);
-    Task DeleteAsync(TKey idx);
+    Task CreateAsync(TEntity obj, CancellationToken cancellationToken);
+    Task UpdateAsync(TEntity obj, CancellationToken cancellationToken);
+    Task DeleteAsync(TKey idx, CancellationToken cancellationToken);
 }

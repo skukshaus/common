@@ -17,11 +17,11 @@ public interface IAsyncComposite : IAsyncDisposable;
 
 public interface IAsyncComposite<in T> : IAsyncCommand
 {
-    Task TraverseAsync();
+    Task TraverseAsync(CancellationToken cancellationToken);
 
-    Task AddElementAsync(T obj);
+    Task AddElementAsync(T obj, CancellationToken cancellationToken);
 
-    Task RemoveElementAsync(T obj);
+    Task RemoveElementAsync(T obj, CancellationToken cancellationToken);
 
-    Task ClearElementsAsync();
+    Task ClearElementsAsync(CancellationToken cancellationToken);
 }
